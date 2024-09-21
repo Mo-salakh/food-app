@@ -8,7 +8,7 @@ import { MealInfo } from './components/MealInfo';
 function App() {
   return (
     <div className="App">
-          <Routes>
+          <Routes basename='/food-app'>
             <Route path='/' element={<Layout />}> 
               <Route index element={<Home />} /> 
               <Route path='/categories/:name' element={<Category />} />
