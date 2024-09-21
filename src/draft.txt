@@ -1,0 +1,13 @@
+const {name} = useParams()
+    const [meals, setMeals] = useState([])
+
+    useEffect(() => {
+        getCategory(name)
+        .then(data => setMeals(data.meals))
+    }, [name])
+
+    return (
+        <>
+            {meals.length === 0 ? <Preloader /> : <MealList meals={meals} />}
+        </>
+    )
