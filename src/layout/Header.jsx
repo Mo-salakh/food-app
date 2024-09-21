@@ -9,9 +9,9 @@ function Header() {
               React Shop
             </Link>
             <ul id="nav-mobile" className="right hide-on-med-and-down">
-              <li>
-                <Link to="/contact">Contact</Link>
-              </li>
+              <a className="grey-text text-lighten-4 right" href="https://github.com/Mo-salakh" target="_blank" rel="noreferrer"> 
+                Git
+              </a>
             </ul>
           </div>
         </nav>
