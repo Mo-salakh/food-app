@@ -58,9 +58,30 @@ nav {
 .btn-back,
 .btn-forward {
   position: absolute;
+  z-index: 10;
 }
 .btn-back {
   left: -7.5rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .btn-back {
+    position: fixed;
+    opacity: 0.5;
+    left: 0rem;
+  }
+  .btn-back:hover,
+  .btn-back:focus {
+    opacity: 1;
+  }
+
+  .meal-recept_content img {
+    width: 100%;
+  }
+
+  iframe {
+    width: 100%;
+  }
 }
 
 .btn-forward {
@@ -71,7 +92,9 @@ nav {
   position: relative;
   margin: 1.5rem 0;
 }
-
+.meal-recept_content img {
+  border-radius: 14px;
+}
 .input_box {
   position: relative;
   margin: 2rem 0;

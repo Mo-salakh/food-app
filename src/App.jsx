@@ -8,14 +8,14 @@ import { MealInfo } from './components/MealInfo';
 function App() {
   return (
     <div className="App">
-          <Routes basename='/food-app'>
-            <Route path='/' element={<Layout />}> 
-              <Route index element={<Home />} /> 
-              <Route path='/categories/:name' element={<Category />} />
-              <Route path='/meals/:id' element={<MealInfo />} />
-              <Route path='*' element={<NotFound />} />
-            </Route>
-          </Routes>
+      <Routes >
+        <Route path='/' element={<Layout />}> 
+          <Route index element={<Home />} /> 
+          <Route path='/categories/:name' element={<Category />} />
+          <Route path='/meals/:id' element={<MealInfo />} />
+          <Route path='*' element={<NotFound />} />
+        </Route>
+      </Routes>
     </div>
   );
 }
